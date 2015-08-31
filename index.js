@@ -15,7 +15,7 @@ module.exports = function(content) {
 	if(limit <= 0 || content.length < limit) {
 		return "module.exports = " + JSON.stringify("data:" + (mimetype ? mimetype + ";" : "") + "base64," + content.toString("base64"));
 	} else {
-		return content;
+		return "";
 	}
 }
 module.exports.raw = true;
